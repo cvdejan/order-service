@@ -125,6 +125,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <layers>
+                        <enabled>true</enabled>
+                    </layers>
+                    <image>
+<!--						<name>ghcr.io/cvdejan/${project.artifactId}:${project.version}</name>-->
+<!--						<name>${project.artifactId}</name>-->
+                        <builder>dashaun/builder:tiny</builder>
+                        <publish>false</publish>
+                    </image>
+<!--					<docker>-->
+<!--						<publishRegistry>-->
+<!--							<username>cvdejan</username>-->
+<!--							<password>${token}</password>-->
+<!--							<url>https://ghcr.io</url>-->
+<!--						</publishRegistry>-->
+<!--					</docker>-->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
