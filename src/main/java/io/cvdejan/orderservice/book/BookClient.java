@@ -12,6 +12,7 @@ import java.time.Duration;
 @RequiredArgsConstructor
 @Component
 public class BookClient {
+
     private final WebClient webClient;
 
     private static final String BOOKS_ROOT_API="/books/";

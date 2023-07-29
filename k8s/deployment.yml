@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: catalog-service
+        app: order-service
     spec:
       containers:
         - name: order-service
